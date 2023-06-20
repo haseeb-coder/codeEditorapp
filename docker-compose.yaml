@@ -1,0 +1,14 @@
+version: '3'
+services:
+  frontend:
+    container_name: learn-core
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - '/home/solutionloft/Documents/custom/programing/envoirnment/projects/learn/learn-core/app.'
+      - '/app/node_module'
+    ports:
+      - 3000:3000
+    environment:
+      - CHOCKIDAR_USEPOLLING=true
