@@ -10,6 +10,7 @@ const ReduxProvider = (props: PropsWithChildren<{}>) => {
   return (
     <Provider store={store}>
       <PersistGate persistor={persist} loading={<Loading />}>
+        <div>hello</div>
         {props.children}
       </PersistGate>
     </Provider>

@@ -5,7 +5,7 @@ import { useAppSelector } from '../store/hooks';
 
 import { appColors, darkModeColors } from './colors';
 
-
+//eslint-disable-next-line
 const CustomThemeProvider = (props: PropsWithChildren<{}>) => {
   const darkMode = useAppSelector(state => state.darkMode);
   const theme = createTheme({
